@@ -15,32 +15,10 @@ namespace MarcoTeste.WebAPI.Controllers
             this.motoristaRepository = new MotoristaRepository();
         }
 
-        // GET: api/Motoristas
         [HttpGet]
         public IEnumerable<Motorista> Get()
         {
             return motoristaRepository.GetAllDrivers();
         }
-
-        //// GET: api/Motoristas/5
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
-        //// POST: api/Motoristas
-        //public void Post([FromBody]string value)
-        //{
-        //}
-
-        //// PUT: api/Motoristas/5
-        //public void Put(int id, [FromBody]string value)
-        //{
-        //}
-
-        //// DELETE: api/Motoristas/5
-        //public void Delete(int id)
-        //{
-        //}
     }
 }
